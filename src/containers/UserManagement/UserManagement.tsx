@@ -15,10 +15,10 @@ const UserManagement = () => {
       <h4 className='text-center mb-3'>User management</h4>
       <div className='row mt-2 justify-content-around'>
         <div className='col-3'>
-          <UserForm onSubmit={addUser}/>
+          <UserForm onSubmit={addUser} />
         </div>
         <div className='col-3'>
-          <Users users={users}/>
+          <Users users={users} />
         </div>
       </div>
     </div>

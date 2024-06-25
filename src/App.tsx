@@ -7,6 +7,7 @@ import Achievements from './containers/Achievements/Achievements';
 import Portfolio from './containers/Portfolio/Portfolio';
 import Game from './containers/Game/Game';
 import UserManagement from './containers/UserManagement/UserManagement';
+import Lottery from './containers/Lottery/Lottery';
 
 const App = () => {
 
@@ -22,9 +23,10 @@ const App = () => {
           <Route path='/portfolio' element={<Portfolio />} >
             <Route path='game' element={<Game />} />
             <Route path='user-management' element={<UserManagement />} />
+            <Route path='lottery' element={<Lottery />} />
           </Route>
           <Route path='/contacts' element={<Contacts />} />
-          <Route path='*' element={<h1>not found</h1>} />
+          <Route path='*' element={<div className='text-center mt-5'><strong>Данной страницы не найдено вернитесь пожалуйста обратно!</strong></div>} />
         </Routes>
       </div>
       <footer className='bg-success'>
