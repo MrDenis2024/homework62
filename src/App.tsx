@@ -6,6 +6,7 @@ import Contacts from './containers/Contacts/Contacts';
 import Achievements from './containers/Achievements/Achievements';
 import Portfolio from './containers/Portfolio/Portfolio';
 import Game from './containers/Game/Game';
+import UserManagement from './containers/UserManagement/UserManagement';
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/achievements' element={<Achievements />} />
           <Route path='/portfolio' element={<Portfolio />} >
             <Route path='game' element={<Game />} />
+            <Route path='user-management' element={<UserManagement />} />
           </Route>
           <Route path='/contacts' element={<Contacts />} />
           <Route path='*' element={<h1>not found</h1>} />
